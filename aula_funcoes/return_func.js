@@ -3,12 +3,16 @@ function criaPessoa(nome, sobrenome) {
   //return {nome: nome, sobrenome: sobrenome};
   return {nome, sobrenome};
 }
-
+// utilizando a função criaPessoa
 const p1 = criaPessoa('Lucas', 'Albuquerque');
+// atribuindo de fomra normal
 const p2 = {nome:'Ana', sobrenome:'Gauer'};
+
+const p3 = criaPessoa('Maria', 'Dorneles');
 
 console.log(p1);
 console.log(p2);
+console.log(p3.sobrenome, p3.nome);
 
 // Retorno de função utilizando uma função dentro da outra
 function criaMultiuplicador(multiplicador){
