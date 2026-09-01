@@ -2,6 +2,22 @@
 const names = ['Lucas', 'Ana', 'Maria'];
 const sobrenomes = new Array ('Albuquerque', 'Gauer', 'Dorneles');
 
+// copiando o array para não ser alterado o original
+const copyArray = [...names];
+
+console.log(copyArray);
+
+// Concatenação de Array
+// com concat();
+const concatArray = names.concat(sobrenomes, [1,2,3], 'teste');
+
+console.log(concatArray);
+
+// com ... -> rest/spread
+const newConcatArray = [...names, ...sobrenomes, 'teste2', ...[4,5,6]];
+
+console.log(newConcatArray);
+
 // Remoção
 delete names[1];
 let removido = sobrenomes.pop(); // pop() salva o elemento removido
